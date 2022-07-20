@@ -1,0 +1,29 @@
+@import '../../scss/mixin.scss';
+@import '../../scss/variable.scss';
+
+.register {
+  @include flexbox-column;
+  align-items: center;
+
+  .h1-register {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.form-register {
+  @include flexbox-column;
+  margin-bottom: 2rem;
+
+  .input-container-register {
+    @include auth-input-container;
+  }
+
+  .input-register {
+    @include auth-input;
+  }
+
+  .invalid {
+    border-color: red;
+  }
+}
